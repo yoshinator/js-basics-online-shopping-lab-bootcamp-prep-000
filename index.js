@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  var price = generatePrice();
- var itemObject = new Object({item, price})
+ var itemObject = new Object({itemName:item, itemPrice:price})
  cart.push(itemObject)
  return `${item} has been added to your cart.`
 }
