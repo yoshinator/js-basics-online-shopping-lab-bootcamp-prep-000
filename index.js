@@ -20,7 +20,7 @@ function viewCart() {
   var statement = "";
   if (cart.length === 0){
   return "Your shopping cart is empty." 
-  }else{
+  }else if (cart.length ===1){
     for (var i = 0; i < cart.length; i++){
       statement = statement+ `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
