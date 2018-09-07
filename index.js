@@ -27,7 +27,7 @@ function viewCart() {
   }
   else {
       for (var i = 0; i < cart.length; i++){
-      statement = statement+ `and ${cart[i].itemName} at $${cart[i].itemPrice}`
+      statement = statement+ `and ${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
   }return statement+".";
 }
