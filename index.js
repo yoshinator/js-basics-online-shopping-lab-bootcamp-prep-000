@@ -35,7 +35,10 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  for (var i = 0; i < cart.length; i ++){
+    total += parseInt(cart[i].itemPrice)
+  }
+  return total;
 }
 
 function removeFromCart(item) {
