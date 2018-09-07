@@ -25,10 +25,10 @@ function viewCart() {
     statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
     return statement+"."
   }
-    else if (cart.length === 2){
-    statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}`
-    return statement+"."
-  }
+  //   else if (cart.length === 2){
+  //   statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}`
+  //   return statement+"."
+  // }
   
   else {
       statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, ${cart[1].itemName} at $${cart[1].itemPrice}`
