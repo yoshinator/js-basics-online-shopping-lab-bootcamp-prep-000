@@ -26,9 +26,9 @@ function viewCart() {
     return statement+"."
   }
   else {
-      statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, `
+      statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
       for (var i = 1; i < cart.length; i++){
-      statement = statement+ `and ${cart[i].itemName} at $${cart[i].itemPrice}, `
+      statement = statement+ `, and ${cart[i].itemName} at $${cart[i].itemPrice}`
     }
   }return statement+".";
 }
