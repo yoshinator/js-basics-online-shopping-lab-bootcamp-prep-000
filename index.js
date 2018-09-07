@@ -35,10 +35,11 @@ function viewCart() {
 }
 
 function total() {
+  var totalPrice =0;
   for (var i = 0; i < cart.length; i ++){
-    total += parseInt(cart[i].itemPrice)
+    totalPrice += parseInt(cart[i].itemPrice)
   }
-  return total;
+  return totalPrice;
 }
 
 function removeFromCart(item) {
