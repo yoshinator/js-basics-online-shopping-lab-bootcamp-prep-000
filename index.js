@@ -22,7 +22,7 @@ function viewCart() {
     return "Your shopping cart is empty." 
   }
   else if (cart.length === 1){
-    statement = `In your cart, you have ${cart[1].itemName} at $${cart[1].itemPrice}`
+    statement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`
     return statement+"."
   }
   else {
