@@ -52,7 +52,7 @@ function viewCart() {
       for (var i = 1; i < cart.length - 1; i++){
       statement = statement+ `, ${cart[i].itemName} at $${cart[i].itemPrice}`
     }
-  }return statement+`and ${cart[cart.length].itemName} at ${cart[cart.length].itemPrice}`;
+  }return statement+`and ${cart[cart.length-1].itemName} at ${cart[cart.length-1].itemPrice}`;
 }
 
 function total() {
